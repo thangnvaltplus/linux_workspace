@@ -25,10 +25,11 @@ cat /dev/null > ~/.bashrc
 ```
 
 Open ~/.bash_profile by vim and append the following text into the end of file
+```bash
 # User specific environment and startup programs
 PATH=$HOME/usr/bin:$HOME/bin:$PATH
 export PATH
-
+```
 
 
 Vim using guide
