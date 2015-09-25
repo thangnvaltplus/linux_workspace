@@ -16,6 +16,16 @@ or just
 ```bash
 sh -c "`curl -fsSL https://raw.githubusercontent.com/thangnvaltplus/linux_workspace/master/install.sh`"
 ```
+After install you have to copy content of .bashrc to .bash_profile and clear content of .bashrc for fixing issue ftp to this environment
+
+Guide:
+cp ~/.bashrc ~/.bash_profile
+cat /dev/null > ~/.bashrc
+
+Open ~/.bash_profile by vim and append the following text into the end of file
+# User specific environment and startup programs
+PATH=$HOME/usr/bin:$HOME/bin:$PATH
+export PATH
 
 
 
